@@ -1,8 +1,7 @@
 * {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #222a33;
-    font-family: Open Sans, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     margin: 0;
@@ -15,14 +14,12 @@ body {
 }
 
 .full-name {
-    color: #2133e067;
-    font-size: 40px;
+    background-color: #159af9;
     font-weight: 700;
     text-transform: capitalize;
     color: #fff;
     display: inline-block;
     font-size: 3em;
-    text-shadow: 1px 0 #222a33, 1px 1px #222a33, 0 1px #222a33, 1px 0 #222a33;
     text-shadow: 2px 0 #000, 2px 2px #000, 0 2px #000, 2px 0 #000;
 }
 
@@ -30,7 +27,6 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #159af9;
-    -webkit-box-shadow: 0 5px 5px 3px #222a33;
     box-shadow: 0 5px 5px 3px #222a33;
     margin: 0 auto;
     max-width: 1140px;
@@ -39,7 +35,6 @@ body {
 }
 
 .logo img {
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     margin-top: 15px;
     margin-right: 15px;
@@ -54,6 +49,8 @@ body {
 
 .text {
     color: #fff;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 
 h1,
@@ -87,13 +84,11 @@ h6 {
 }
 
 .contact-wrapper {
-    -webkit-box-shadow: 0 5px 5px 3px #222a33;
     box-shadow: 0 5px 5px 3px #222a33;
     margin: 0 auto;
     max-width: 1140px;
     padding: 2em 3em;
     width: 100%;
-    -webkit-flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -136,7 +131,6 @@ ul {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
     color: inherit;
     text-transform: none;
@@ -144,19 +138,18 @@ a {
     padding-left: 15px;
 }
 
-a:hover {
-    color: blue;
-    transition: color 0.5s;
-}
-
 li a {
-    -webkit-transition: color 1s;
     color: inherit;
     height: 100%;
-    padding: 0px 10px;
+    padding: 0 10px;
     text-transform: none;
     transition: color 1s;
     width: 100%;
+}
+
+a:hover {
+    color: blue;
+    transition: color 0.5s;
 }
 
 li {
@@ -170,10 +163,6 @@ li:hover {
     transition: color 0.5s;
 }
 
-.text {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
 
 @keyframes slidein {
     from {
@@ -195,7 +184,6 @@ p {
 
 .content-wrapper {
     background: white;
-    -webkit-box-shadow: 0 5px 5px 3px #222a33;
     box-shadow: 0 5px 5px 3px #222a33;
     margin: 0 auto;
     max-width: 1140px;
@@ -221,7 +209,6 @@ p {
 
 .active {
     background: dodgerblue;
-    -webkit-border-radius: 50%;
     border: 1px solid #222a33;
     border-radius: 50%;
     display: inline-block;
@@ -230,7 +217,6 @@ p {
 }
 
 .not-active {
-    -webkit-border-radius: 50%;
     border: 1px solid #222a33;
     border-radius: 50%;
     display: inline-block;
@@ -241,7 +227,6 @@ p {
 .circle {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     display: flex;
     display: inline-block;
     flex-direction: column;
@@ -331,9 +316,7 @@ p {
 }
 
 .wrapper-footer {
-    -webkit-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
-    -webkit-box-shadow: 0 5px 5px 3px #222a33;
     background: #fff;
     box-shadow: 0 5px 5px 3px #222a33;
     margin: 0 auto;
@@ -343,11 +326,10 @@ p {
     text-align: center;
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width <= 850px) {
     .wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
-        -webkit-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
 
@@ -382,19 +364,14 @@ p {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media (max-width <= 650px) {
     .content-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
-        -webkit-flex-direction: column;
         flex-direction: column;
     }
 
     .left {
-        width: 100%;
-    }
-
-    .block-languages {
         width: 100%;
     }
 
@@ -434,11 +411,10 @@ p {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media (max-width <= 400px) {
     .content-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
-        -webkit-flex-direction: column;
         flex-direction: column;
     }
 
@@ -448,16 +424,12 @@ p {
 
     .block-languages {
         width: 100%;
+        margin-top: 10px;
     }
 
     .block-skills {
         width: 100%;
         margin-top: 30px;
-    }
-
-    .block-languages {
-        width: 100%;
-        margin-top: 10px;
     }
 
     ul {
@@ -480,6 +452,8 @@ p {
 
     .download-cv {
         margin-top: 20px;
+        position: absolute;
+        left: 35%;
     }
 
     img {
@@ -491,10 +465,6 @@ p {
         top: 3%;
     }
 
-    .download-cv {
-        position: absolute;
-        left: 35%;
-    }
 }
 
 .download-cv {
