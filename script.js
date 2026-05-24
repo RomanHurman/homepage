@@ -1,35 +1,75 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var url_string = window.location.href
-    var url = new URL(url_string);
-    var show = url.searchParams.get('show');
-    if (show == 1) {
-        var div = document.getElementsByClassName('phoneHide');
-        div[0].style.display = 'block';
+    console.log('Resume page loaded successfully!');
 
-        var div = document.getElementsByClassName('phoneShow');
-        div[0].style.display = 'none';
+    const progressBars = document.querySelectorAll('.progress-fill');
+    progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => {
+            bar.style.width = width;
+        }, 200);
+    });
 
-        var link = document.getElementsByClassName('download-cv');
-        link[0].style.display = 'none';
+    const fadeElements = document.querySelectorAll('.about, .projects, .work, .education, .goals, .certificates, .interests');
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.5s ease';
+        observer.observe(el);
+    });
+
+    const projectItems = document.querySelectorAll('.projects-item');
+    projectItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateX(5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        item.addEventListener('mouseleave', function () {
+            this.style.transform = 'translateX(0)';
+        });
+    });
+
+    const downloadBtn = document.querySelector('.download-cv');
+    if (downloadBtn) {
+        downloadBtn.addEventListener('click', function () {
+            console.log('Downloading CV...');
+        });
     }
-    var phoneHide = document.getElementById('phoneHide');
-    var phoneShow = document.getElementById('phoneShow');
-    phoneShow.onclick = function () {
-        phoneHide.style.display = 'block';
-        phoneShow.style.display = 'none';
-    };
-});
-$(".logo").hover(
-    function () {
-        $(this).append($("<p>#OPENTOWORK</p>"));
-    }, function () {
-        $(this).find("p").last().remove();
-    }
-);
 
-$(document).ready(function () {
-    $("#hide").click(function () {
-        $(".download-cv").hide();
+    const skillItems = document.querySelectorAll('.tech-skills-item, .soft-skills-item');
+    skillItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateX(5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        item.addEventListener('mouseleave', function () {
+            this.style.transform = 'translateX(0)';
+        });
+    });
+
+    const languageItems = document.querySelectorAll('.language-item');
+    languageItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+            this.style.transform = 'translateX(5px)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        item.addEventListener('mouseleave', function () {
+            this.style.transform = 'translateX(0)';
+        });
     });
 });
+
+if (document.querySelector('.year')) {
+    document.querySelector('.year').textContent = new Date().getFullYear();
+}

@@ -5,220 +5,242 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" as="font"
-    onload="this.onload=null;this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  </noscript>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>My resume | Roman Hurman</title>
 </head>
 
 <body>
-  <div id="hide">
-    <a href="r_Hurman-fullStack.pdf" target="_blank" class="download-cv" download>Download
-      cv</a>
-  </div>
-  <header class="header">
-    <div class="wrapper">
-      <div class="text-wrapper">
-        <h2 class="full-name">Roman Hurman</h2>
-        <h3 class="title">Trainee Full-Stack Developer</h3>
-        <h1 class="text">
-          Motivated and detail-oriented Trainee Full-Stack Developer with a strong foundation in computer
-          engineering and hands-on
-          experience creating responsive, interactive web applications. Passionate about writing clean code,
-          learning modern technologies,
-          and contributing to real-world projects in a collaborative environment.
-        </h1>
+  <!-- Main -->
+  <div class="main">
+    <!-- Main content -->
+    <div class="main-content">
+      <!-- Download CV button -->
+      <div class="download-container">
+        <a href="r_Hurman-fullStack.pdf" target="_blank" class="download-cv" download>
+          <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          <span class="download-text">Download CV</span>
+        </a>
       </div>
-      <a href="#" class="logo" title="I am Roman Hurman"><img src="assets/avatar.png" width="200" height="200"
-          alt="Roman Hurman" /></a>
-    </div>
-  </header>
-  <section class="contact">
-    <div class="contact-wrapper">
-      <h2 class="ion-information-circled"> CONTACTS</h2>
-      <ul class="left">
-        <li class="ion-ios-email-outline">
-          <a class="social" href="mailto:roman.gurman27@gmail.com">roman.gurman27@gmail.com</a>
-        </li>
-        <li class="ion-ios-telephone-outline phoneHide" style="display: none" id="phoneHide">
-          <a class="social" href="tel:+380982537974">+380 98 25 37 974</a>
-        </li>
-        <li class="ion-ios-telephone-outline phoneShow" style="display: block" id="phoneShow">
-          <a class="social" href="tel:+380XXXXXXXXX" title="click to show" onclick="return false">+380 XX XX
-            XX XXX</a>
-        </li>
-        <li class="ion-ios-location-outline">
-          <a class="social"
-            href="https://www.google.com/maps/place/%D0%9B%D1%8C%D0%B2%D1%96%D0%B2,+%D0%9B%D1%8C%D0%B2%D1%96%D0%B2%D1%81%D1%8C%D0%BA%D0%B0+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.8367536,24.0044266,11z/data=!4m5!3m4!1s0x473add7c09109a57:0x4223c517012378e2!8m2!3d49.839683!4d24.029717"
-            rel="nofollow">Lviv,
-            Ukraine</a>
-        </li>
-      </ul>
-      <ul class="right">
-        <li class="ion-social-github">
-          <a class="social" href="https://github.com/RomanHurman">github</a>
-        </li>
-        <li class="ion-social-facebook-outline">
-          <a class="social" href="https://www.facebook.com/roman.hurman"> facebook</a>
-        </li>
-        <li class="ion-social-linkedin-outline">
-          <a class="social" href="https://www.linkedin.com/in/roman-hurman-7b52b2112/">linkedin</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <section class="content">
-    <div class="content-wrapper">
-      <div class="block-languages">
-        <h2 class="ion-chatbubbles"> LANGUAGES</h2>
-        <ul>
-          <li>
-            <span class="country">Ukraine</span>
-            <ul class="circle">
-              <li class="active"></li>
-              <li class="active"></li>
-              <li class="active"></li>
-              <li class="active"></li>
-              <li class="active"></li>
-            </ul>
-          </li>
-          <li>
-            <span class="country">English</span>
-            <ul class="circle">
-              <li class="active"></li>
-              <li class="active"></li>
-              <li class="active"></li>
-              <li class="not-active"></li>
-              <li class="not-active"></li>
-            </ul>
-          </li>
-        </ul>
+
+      <!-- about user -->
+      <div class="about">
+        <h2 class="about-position">Trainee Full-Stack Developer</h2>
+        <h1 class="about-name">Roman Hurman</h1>
+        <p class="about-description">Motivated and detail-oriented Trainee Full-Stack Developer with a strong
+          foundation in computer engineering and hands-on experience creating responsive, interactive web
+          applications. Passionate about writing clean code, learning modern technologies, and contributing to
+          real-world projects in a collaborative environment.</p>
       </div>
-      <div class="block-skills">
-        <h2 class="ion-gear-b"> Hard Skills</h2>
-        <ul>
-          <li class="skill"><a href="#">Responsive UI</a></li>
-          <li class="skill"><a href="#">REST API</a></li>
-          <li class="skill"><a href="#">Node.js (basic)</a></li>
-          <li class="skill"><a href="#">HTML5, CSS3</a></li>
-          <li class="skill"><a href="">JavaScript</a></li>
-          <li class="skill"><a href="">Git, GitHub</a></li>
-          <li class="skill"><a href="">Database basics</a></li>
-          <li class="skill"><a href="">Design tools</a></li>
-          <li class="skill"><a href="">Command Line</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="content">
-    <div class="content-wrapper">
-      <div class="block-languages">
-        <h2 class="ion-university"> Education</h2>
-        <ul class="universe">
-          <li>
-            <span class="study">State University 'Lviv Polytechnics'
-            </span>
-          </li>
-          <li>
-            <span class="study">Master's degree, computer engineer</span>
-          </li>
-        </ul>
-        <span class="study">2009 -> 2014</span>
-      </div>
-      <div class="block-skills">
-        <h2 class="ion-gear-b"> Soft Skills</h2>
-        <ul>
-          <li class="skills"><a href="#">Problem-solving</a></li>
-          <li class="skills"><a href="">Teamwork</a></li>
-          <li class="skills"><a href="">Fast learner</a></li>
-          <li class="skills"><a href="">Adaptable</a></li>
-          <li class="skills"><a href="">Communication</a></li>
-          <li class="skills"><a href="">Responsibility</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="content">
-    <div class="content-wrapper">
-      <div class="block-languages">
-        <h2 class="ion-university"> Additional education</h2>
-        <ul class="works">
-          <li>
-            <span class="works-about">Course [Fundamentals] Front-End Q4 2025 #2 in EPAM Campus
-            </span>
-          </li>
-          <li>
-            <span class="works-about">Self-learning through projects and online resources</span>
-          </li>
-          <li>
-            <span class="works-about">Continuous improvement by building and deploying pet projects</span>
-          </li>
-        </ul>
-      </div>
-      <div class="block-languages">
-        <h2 class="ion-eye"> PORTFOLIO</h2>
-        <ul class="works">
-          <li class="jobs">
-            <a class="jobs-stack" href="https://github.com/RomanHurman/Suitcase-store.git">Suitcase Store</a>
-            <p class="jobs-about">
+
+      <!-- Projects -->
+      <div class="projects">
+        <h2 class="title">📁 Portfolio</h2>
+        <ol class="projects-list">
+          <li class="projects-item">
+            <span class="project">
+              <a href="https://github.com/RomanHurman/Suitcase-store.git" target="_blank" class="project-link">Suitcase
+                Store</a>
+              <span class="project-bracket">[</span>
               Created a fully responsive, multi-page e-commerce website.
-            </p>
+              <span class="project-bracket">]</span>
+            </span>
           </li>
-          <li class="jobs">
-            <a class="jobs-stack" href="https://romanhurman.github.io/trucks-rental/">Trucks Rental</a>
-            <p class="jobs-about">
+          <li class="projects-item">
+            <span class="project">
+              <a href="https://romanhurman.github.io/trucks-rental/" target="_blank" class="project-link">Trucks
+                Rental</a>
+              <span class="project-bracket">[</span>
               Developed responsive layout, implemented interactive UI components, and improved usability.
-            </p>
+              <span class="project-bracket">]</span>
+            </span>
           </li>
-          <li class="jobs">
-            <a class="jobs-stack" href="https://users.great-site.net/">Users-Table</a>
-            <p class="jobs-about">
+          <li class="projects-item">
+            <span class="project">
+              <a href="https://users.great-site.net/" target="_blank" class="project-link">Users-Table</a>
+              <span class="project-bracket">[</span>
               Developed a dynamic and responsive user table interface with CRUD functionality, search, and
               sorting.
-            </p>
-          </li>
-          <li class="jobs">
-            <a class="jobs-stack" href="https://github.com/RomanHurman/pokedex-app">Pokedex-App</a>
-            <p class="jobs-about">
-              Fetched and displayed Pokémon data from an API, implemented search & filtering
-              functionality.
-            </p>
-          </li>
-          <li class="jobs">
-            <a class="jobs-stack" href="https://github.com/RomanHurman/login-system.git">Login System</a>
-            <p class="jobs-about">
-              Created a login system with form validation.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section class="content">
-    <div class="content-wrapper">
-      <div class="block-qualities">
-        <h2 class="ion-ios-information-outline"> GOALS</h2>
-        <ul>
-          <li class="jobs">
-            <span class="works-about">I aim to join a forward-looking company where I can continue
-              developing as a developer, contribute with clean, efficient code, and help build products
-              that matter.
+              <span class="project-bracket">]</span>
             </span>
           </li>
+          <li class="projects-item">
+            <span class="project">
+              <a href="https://github.com/RomanHurman/pokedex-app" target="_blank" class="project-link">Pokedex-App</a>
+              <span class="project-bracket">[</span>
+              Fetched and displayed Pokémon data from an API, implemented search & filtering
+              functionality.
+              <span class="project-bracket">]</span>
+            </span>
+          </li>
+          <li class="projects-item">
+            <span class="project">
+              <a href="https://github.com/RomanHurman/login-system.git" target="_blank" class="project-link">Login
+                System</a>
+              <span class="project-bracket">[</span>
+              Created a login system with form validation.
+              <span class="project-bracket">]</span>
+            </span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Education -->
+      <div class="education">
+        <h3 class="title">🎓 Education</h3>
+        <h4 class="university">State University 'Lviv Polytechnics'</h4>
+        <h4 class="departament">Master's degree, computer engineer</h4>
+        <p class="period">September 2009 - June 2014 <span class="line">|</span> Lviv</p>
+      </div>
+
+      <!-- Additional Education -->
+      <div class="work">
+        <h3 class="title">📚 Additional Education</h3>
+        <ul class="work-list">
+          <li class="work-list-item">Course [Fundamentals] Front-End Q4 2025 #2 in EPAM Campus</li>
+          <li class="work-list-item">Self-learning through projects and online resources</li>
+          <li class="work-list-item">Continuous improvement by building and deploying pet projects</li>
+        </ul>
+      </div>
+
+      <!-- Ongoing Learning -->
+      <div class="ongoing-learning">
+        <h3 class="title">📚 Ongoing Learning</h3>
+        <ul class="work-list">
+          <li class="work-list-item">📖 Currently learning: React & TypeScript</li>
+          <li class="work-list-item">🎯 Next goal: Node.js Backend Development</li>
+          <li class="work-list-item">💡 Daily practice: LeetCode & CodeWars</li>
+        </ul>
+      </div>
+
+      <!-- Goals -->
+      <div class="goals">
+        <h3 class="title">🎯 Goals</h3>
+        <div class="goals-content">
+          <p class="goals-text">
+            I aim to join a forward-looking company where I can continue
+            developing as a developer, contribute with clean, efficient code,
+            and help build products that matter.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tech & Hobbies -->
+      <div class="interests">
+        <h3 class="title">⭐ Tech & Hobbies</h3>
+        <ul class="work-list">
+          <li class="work-list-item">☕ Coffee Enthusiast</li>
+          <li class="work-list-item">🎧 Podcast Listening</li>
+          <li class="work-list-item">💻 Open Source Contribution</li>
+          <li class="work-list-item">✍️ Technical Writing</li>
+          <li class="work-list-item">🎮 Competitive Programming</li>
         </ul>
       </div>
     </div>
-  </section>
-  <footer class="footer">
-    <div class="wrapper-footer">
-      <a class="year" href="#">@ Roman Hurman - 2026 <span id="year"></span></a>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="image">
+        <img src="assets/avatar.png" title="I am Roman Hurman" alt="My photo" class="photo">
+      </div>
+
+      <!-- Contacts -->
+      <div class="contacts">
+        <h3 class="sidebar-title">📞 Contacts</h3>
+        <div>
+          <p>
+            <span class="contact-type">📞</span>
+            <a href="tel:+380981234567" class="contact-link">+380 98 253 79 74</a>
+          </p>
+          <p>
+            <span class="contact-type">✉️</span>
+            <a href="mailto:roman.gurman27@gmail.com" class="contact-link">roman.gurman27@gmail.com</a>
+          </p>
+          <p>
+            <span class="contact-type">💻</span>
+            <a href="https://github.com/RomanHurman" target="_blank" class="contact-link">Github</a>
+          </p>
+          <p>
+            <span class="contact-type">🔗</span>
+            <a href="https://www.linkedin.com/in/roman-hurman-7b52b2112/" target="_blank"
+              class="contact-link">Linkedin</a>
+          </p>
+          <p>
+            <span class="contact-type">🔗</span>
+            <a href="https://www.facebook.com/roman.hurman" target="_blank" class="contact-link">Facebook</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="languages">
+        <h3 class="sidebar-title">🌐 Languages</h3>
+        <ul class="languages-list">
+          <li class="language-item">
+            <span class="language-name">Ukrainian</span>
+            <div class="language-level">
+              <span class="level-badge">Native</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+            </div>
+          </li>
+          <li class="language-item">
+            <span class="language-name">English</span>
+            <div class="language-level">
+              <span class="level-badge">Intermediate</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 80%"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-content">
+        <!-- Tech skills -->
+        <div class="tech-skills">
+          <h3 class="sidebar-title">💻 Tech Skills</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item"><span class="tech-skills-text">HTML5</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">CSS3</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">GIT</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Figma</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">JavaScript</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Responsive UI</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Node.js (basic)</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Rest API</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Database basics</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Design tools</span></li>
+            <li class="tech-skills-item"><span class="tech-skills-text">Command Line</span></li>
+          </ul>
+        </div>
+
+        <!-- Soft skills -->
+        <div class="soft-skills">
+          <h3 class="sidebar-title">🤝 Soft Skills</h3>
+          <ul class="soft-skills-list">
+            <li class="soft-skills-item"><span class="soft-skills-text">Scrum</span></li>
+            <li class="soft-skills-item"><span class="soft-skills-text">Adaptable</span></li>
+            <li class="soft-skills-item"><span class="soft-skills-text">Fast learner</span></li>
+            <li class="soft-skills-item"><span class="soft-skills-text">Teamwork</span></li>
+            <li class="soft-skills-item"><span class="soft-skills-text">Communication</span></li>
+            <li class="soft-skills-item"><span class="soft-skills-text">Problem-solving</span></li>
+            <li class="soft-skills-item"><span class="soft-skills-text">Responsibility</span></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
